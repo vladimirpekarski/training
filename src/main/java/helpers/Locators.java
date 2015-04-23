@@ -9,7 +9,7 @@ import java.util.Properties;
 public class Locators {
     public static final Properties LOCATORS;
     public static enum LocatorsType {
-        id, name, css, xpath
+        id, name, css, xpath, className
     }
 
     static {
@@ -42,6 +42,10 @@ public class Locators {
 
             case xpath: {
                 return By.xpath(locatorTypeAndValue[1]);
+            }
+
+            case className: {
+                return By.className(locatorTypeAndValue[1]);
             }
 
             default: {

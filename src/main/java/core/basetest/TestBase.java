@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 
 
 public class TestBase {
-    public static final String BASE_URL = "https://www.facebook.com";
+    public static final String BASE_URL = "http://facebook.com";
 
     @BeforeTest
     public void configure() {
