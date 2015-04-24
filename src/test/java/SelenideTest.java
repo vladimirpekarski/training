@@ -13,6 +13,7 @@ public class SelenideTest extends TestBase {
     public void logInToFb() {
         LoginPage.shouldBeLoginPage();
         LoginPage.login(userName, userPass);
-        HomePage.shoulBeHomePage();
+        HomePage.shouldBeHomePage();
+        HomePage.postWhatsInYourMindMessage("Auto test");
     }
 }
