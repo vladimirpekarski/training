@@ -15,5 +15,6 @@ public class SelenideTest extends TestBase {
         LoginPage.login(userName, userPass);
         HomePage.shouldBeHomePage();
         HomePage.postWhatsInYourMindMessage("Auto test");
+
     }
 }
